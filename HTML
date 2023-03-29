@@ -1,0 +1,64 @@
+HTML 
+
+<html>
+<head>
+</head>
+<body>
+<nav>
+  <h2>STYLE CONFERENCE</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Speaker</a></li>
+    <li><a href="#">Schedule</a></li>
+    <li><a href="#">Venue</a></li>
+    <li><a href="#" id="register-btn">Register Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- Page content goes here -->
+</main>
+
+<img src="C:\Users\20102097\Pictures\Screenshots\Screenshot (1).png>
+<img src="C:\Users\20102097\Pictures\Screenshots\Screenshot (2).png>
+
+<footer>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Speaker</a></li>
+    <li><a href="#">Schedule</a></li>
+    <li><a href="#">Venue</a></li>
+    <li><a href="#" id="register-btn-footer">Register Now</a></li>
+  </ul>
+</footer>
+</body>
+</html>
+
+CSS
+
+#register-btn:hover,
+#register-btn-footer:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+Javascript
+
+const registerBtn = document.querySelector('#register-btn');
+const registerBtnFooter = document.querySelector('#register-btn-footer');
+
+registerBtn.addEventListener('mouseover', () => {
+  registerBtn.style.backgroundColor = 'lightgreen';
+});
+
+registerBtn.addEventListener('mouseout', () => {
+  registerBtn.style.backgroundColor = '';
+});
+
+registerBtnFooter.addEventListener('mouseover', () => {
+  registerBtnFooter.style.backgroundColor = 'lightgreen';
+});
+
+registerBtnFooter.addEventListener('mouseout', () => {
+  registerBtnFooter.style.backgroundColor = '';
+});
